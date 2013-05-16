@@ -1,0 +1,15 @@
+<?php echo 'Bienvenido, '.$this->user->nombre.' '.$this->user->apellido.'. ¿Qué desea hacer?';?>
+<?php echo '<br>Tu role es: '.$this->role; ?>
+<ul>
+    <li> <a href="<?php echo $this->baseurl; ?>/default/index/index" > Inicio </a></li>
+    <?php if($this->user->role == 'admins'){?>
+        <li> <a href="<?php echo $this->baseurl; ?>/admin/usuario/crear" > Crear un nuevo usuario </a></li>
+        <li> <a href="<?php echo $this->baseurl; ?>/admin/usuario/listar" > Ver listado de usuarios </a></li>
+        <li> <a href="<?php echo $this->baseurl; ?>/admin/producto/crear" > Crear un nuevo producto </a></li>
+        <li> <a href="<?php echo $this->baseurl; ?>/admin/producto/listar" > Ver listado de productos </a></li>
+    <?php } else if($this->role == 'users') { ?>
+        <li> <a href="<?php echo $this->baseurl; ?>/usuarios/index/listar" > Ver listado de usuarios </a></li>
+        <li> <a href="<?php echo $this->baseurl; ?>/usuarios/producto/listar" > Ver listado de productos </a></li>
+    <?php } ?>
+        <li> <a href="<?php echo $this->baseurl; ?>/default/login/logout" > Cerrar sesión </a></li>
+</ul>
