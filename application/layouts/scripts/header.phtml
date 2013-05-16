@@ -4,5 +4,38 @@
         <?php echo $this->headMeta() . "\n" ?>
         <?php echo $this->headTitle(); ?>
         <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
     </head>
     <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="<?php echo $this->baseurl; ?>"><strong>Monster<sup>&reg</sup> Objective</strong></a>
+                <div class="botones">
+                    <ul class="nav">
+                        <li><a href="<?php echo $this->baseurl; ?>/mensajes/index/index">Inicio</a></li>
+                        <li><a href="<?php echo $this->baseurl; ?>/mensajes/index/seguidos">Referencias</a></li>
+                        <li><a href="<?php echo $this->baseurl; ?>/mensajes/index/propios">Mi página</a></li>
+                    </ul>
+                </div>
+                <div class="iconoBarraSuperior">
+                    <img src="<?php echo $this->baseurl; ?>/bootstrap/img/logo.png" alt="monster" width="25">
+                </div>
+                <div class="infoBarraSuperior">
+                    <div class="botones">
+                        <ul class="nav">
+                            <li class="dropdown" id="preview-menu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Menú de usuario <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo $this->baseurl; ?>/usuarios/perfil/modificar/id/<?php echo $this->user->id; ?>">Ver perfil</a></li>
+                                    <li><a href="<?php echo $this->baseurl; ?>/mensajes/index/propios">Ver mi página</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<?php echo $this->baseurl; ?>/mensajes/index/seguidos">Referencias</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<?php echo $this->baseurl; ?>/default/login/logout">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>

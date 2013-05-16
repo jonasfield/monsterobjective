@@ -1,0 +1,77 @@
+/* 
+    Document   : estilos
+    Created on : 17-abr-2013, 19:19:25
+    Author     : victor
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#bienvenida{
+    margin-top: 200px;
+    margin-left: 0px;
+}
+
+.bienvenida2{
+    margin-left: 0px;
+}
+
+.principal{
+    margin-top: 215px;
+}
+
+.botones{
+    
+}
+
+.iconoBarraSuperior{
+    margin-left:650px;
+}
+
+.infoBarraSuperior{
+    margin-left: 1200px;
+    margin-top: -40px;
+}
+
+.superiorizquierda{
+    height: auto;
+    border:1px #999999 solid;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.derecha{
+    height: auto;
+    border:1px #999999 solid;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.fotoCuadroPerfil{
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.textoCuadroPerfil{
+    
+}
+
+.cuadrologin{
+    margin-left:140px;
+}
+
+.mensajekokek{
+    margin-right: 10px;
+    margin-left: 44px;
+    margin-top: 0px;
+}
+
+.resumenGuardado{
+    border:1px #999999 solid;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+
+

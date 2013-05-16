@@ -1,4 +1,38 @@
-<p>Index de Default</p>    
+<?php echo $this->doctype() . "\n" ?>
+<html>
+    <head>
+        <?php echo $this->headMeta() . "\n" ?>
+        <?php echo $this->headTitle('Kokekokkoo'); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="<?php echo $this->baseurl; ?>"><strong>Monster<sup>&reg</sup> Objective</strong></a>
+                <div class="iconoBarraSuperior">
+                    <img src="<?php echo $this->baseurl; ?>/bootstrap/img/logo.png" alt="monster" width="25">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido pagina principal -->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span8"> 
+                    <h1 id="bienvenida"> Bienvenidos a Monster<sup>&reg</sup>Objective </h1>
+                    <h4 class="bienvenida2">Márcate un reto.</h4> 
+                    <h4 class="bienvenida2">Establece tus propios límites...¿serás capaz?</h4>
+                </div>
+                <div class="span4">
+                    <div class="principal"> 
+                        <img src="<?php echo $this->baseurl; ?>/bootstrap/img/logo.png" alt="monster" width="90"> 
+                        <a href="<?php echo $this->baseurl; ?>/mensajes/index/index"><button class="btn btn-primary">Acceder a Objective<sup>&reg</sup></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>  
 <a href="<?php echo $this->baseurl; ?>/usuarios/index/index">Ir a Usuarios</a> |
 <a href="<?php echo $this->baseurl; ?>/retos/index/index">Ir a Retos</a> |
 <a href="<?php echo $this->baseurl; ?>/admin/index/index">Ir a Admin</a>
