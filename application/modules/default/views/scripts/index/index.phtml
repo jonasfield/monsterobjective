@@ -2,7 +2,7 @@
 <html>
     <head>
         <?php echo $this->headMeta() . "\n" ?>
-        <?php echo $this->headTitle('Kokekokkoo'); ?>
+        <?php echo $this->headTitle('Monster Objective'); ?>
         <?php echo $this->headLink(); ?>
         <?php echo $this->headScript(); ?>
 
@@ -10,7 +10,7 @@
     <body>
         <div class="navbar">
             <div class="navbar-inner">
-                <a class="brand" href="<?php echo $this->baseurl; ?>"><strong>Monster<sup>&reg</sup> Objective</strong></a>
+                <a class="brand" href="<?php echo $this->baseurl; ?>"><strong>Monster<sup>&copy;</sup> Objective</strong></a>
                 <div class="iconoBarraSuperior">
                     <img src="<?php echo $this->baseurl; ?>/bootstrap/img/logo.png" alt="monster" width="25">
                 </div>
@@ -28,11 +28,13 @@
                 <div class="span4">
                     <div class="principal"> 
                         <img src="<?php echo $this->baseurl; ?>/bootstrap/img/logo.png" alt="monster" width="90"> 
-                        <a href="<?php echo $this->baseurl; ?>/mensajes/index/index"><button class="btn btn-primary">Acceder a Objective<sup>&reg</sup></button></a>
+                        <a href="<?php echo $this->baseurl; ?>/retos/index/index"><button style="margin-left:15px;" class="btn btn-info">Acceder a Objective<sup>&reg</sup></button></a>
                     </div>
                 </div>
             </div>
         </div>  
-<a href="<?php echo $this->baseurl; ?>/usuarios/index/index">Ir a Usuarios</a> |
-<a href="<?php echo $this->baseurl; ?>/retos/index/index">Ir a Retos</a> |
-<a href="<?php echo $this->baseurl; ?>/admin/index/index">Ir a Admin</a>
+        <div class="pie">
+            <small><sup>&copy</sup>2013 MONSTER ENERGY COMPANY. TODOS LOS DERECHOS RESERVADOS. | Diseño Web by Troll</small>
+        </div>
+    </body>
+</html>

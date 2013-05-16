@@ -634,6 +634,8 @@ a:focus {
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
+  margin-left: 160px;
+  width: 1000px;
   *zoom: 1;
 }
 

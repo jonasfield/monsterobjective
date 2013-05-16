@@ -82,7 +82,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=' . Zend_Registry::get('config')->parameters->charset);
         $view->headLink()->appendStylesheet($view->baseUrl('/bootstrap/css/bootstrap.css'));
         $view->headLink()->appendStylesheet($view->baseUrl('/bootstrap/css/estilos.css'));
-        $view->headLink()->headLink(array('rel' => 'icon','href' => $view->baseUrl('/imagenes/favicon.ico')),'PREPEND');
+        $view->headLink()->headLink(array('rel' => 'icon','href' => $view->baseUrl('/bootstrap/img/favicon.ico')),'PREPEND');
         $view->headScript()->appendFile($view->baseUrl('/bootstrap/js/jquery.js'));
         $view->headScript()->appendFile($view->baseUrl('/bootstrap/js/bootstrap.js'));
         $view->headScript()->appendFile($view->baseUrl('/bootstrap/js/funciones.js'));

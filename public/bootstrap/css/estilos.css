@@ -16,7 +16,8 @@
 }
 
 .principal{
-    margin-top: 215px;
+    margin-top: 200px;
+    margin-left:25px;
 }
 
 .botones{
@@ -32,46 +33,7 @@
     margin-top: -40px;
 }
 
-.superiorizquierda{
-    height: auto;
-    border:1px #999999 solid;
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-left: 15px;
+.pie{
+    margin-left: 400px;
+    margin-top: 200px;
 }
-.derecha{
-    height: auto;
-    border:1px #999999 solid;
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.fotoCuadroPerfil{
-    float:left;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.textoCuadroPerfil{
-    
-}
-
-.cuadrologin{
-    margin-left:140px;
-}
-
-.mensajekokek{
-    margin-right: 10px;
-    margin-left: 44px;
-    margin-top: 0px;
-}
-
-.resumenGuardado{
-    border:1px #999999 solid;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-
-
-
