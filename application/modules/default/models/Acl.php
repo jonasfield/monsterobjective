@@ -33,11 +33,12 @@ class Default_Model_Acl extends Zend_Acl
         $this->allow('guests', 'default:error', 'error');
         $this->allow('guests', 'usuarios');
         $this->allow('guests', 'admin');
-        $this->allow('guests', 'retos');
+        $this->allow('guests', 'retos:index', 'index');
 
 
         $this->allow('users', 'default:login', 'logout');
         $this->allow('users', 'usuarios:index');
+        //$this->allow('users', 'retos');
 
 
         $this->allow('admins', 'admin');

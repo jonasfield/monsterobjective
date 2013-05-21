@@ -11,18 +11,10 @@ class Default_LoginController extends Zend_Controller_Action
     {
         $this->_login = new Default_Model_Login();
         $this->_config = Zend_Registry::get('config');
-        $this->view->baseurl = $this->getRequest()->getBaseUrl();
         $this->_userDao = new Usuarios_Model_UsuarioDao();
     }
 
-//    public function preDispatch()
-//    {
-//        if (Default_Model_Login::isLoggedIn()) {
-//            $this->view->loggedIn = true;
-//            $this->view->user = Default_Model_Login::getIdentity();
-//        }
-//    }
-
+    
     private function _getform()
     {
         return new Default_Form_login();
@@ -31,7 +23,7 @@ class Default_LoginController extends Zend_Controller_Action
     public function indexAction()
     {
 
-        $this->view->headTitle('Defaultistrador');
+        $this->view->headTitle('Login - Monster Objective');
         $this->view->formulario = $this->_getform();
         return $this->render();
     }
@@ -61,7 +53,7 @@ class Default_LoginController extends Zend_Controller_Action
                 $this->_login->login($email, $clave);
                 $this->_helper->layout->assign("mensaje", "Login Correcto!!!");
                 $this->_helper->layout->assign("colorMensaje", "green");
-                return $this->_redirect('default/login/menu');
+                return $this->_redirect('retos/index/seguidos');
             } catch (Exception $e) {
                 $this->_helper->layout->assign("mensaje", $e->getMessage());
                 return $this->_forward('index');
